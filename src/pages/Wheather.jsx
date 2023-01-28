@@ -11,10 +11,7 @@ const Wheather = () => {
       const res = await fetch(ENDPOINT_WHEATHER)
       const data = await res.json()
       const newData = await data
-
       setData(newData)
-      console.log(newData)
-      console.log(newData.weather[0].icon)
     } catch (error) {
       console.log(error)
     }
