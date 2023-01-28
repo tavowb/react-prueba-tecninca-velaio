@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Climate from '../components/Climate'
-const city = 'Bogota'
+const city = 'Santiago de Cali'
 const country = 'Colombia'
 const Wheather = () => {
   const [data, setData] = useState()
