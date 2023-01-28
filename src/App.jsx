@@ -1,13 +1,13 @@
+import { Provider } from 'react-redux'
+import AuthRouter from './routes/AuthRouter'
+import { store } from './store/store'
 
-function App() {
-
+function App () {
   return (
-    <div >
-        
-      <p >
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <Provider store={store}>
+      <AuthRouter />
+    </Provider>
+
   )
 }
 
